@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>js实操作业</title>
+  <link type="text/css" rel="styleSheet"  href="./style.css" />
+
+</head>
+<body>
+<div id="time">
+ 
+</div>
+<script type="text/javascript">
+    var add=setInterval("getTime()",1000);
+    //这个函数主要是获取时间然后写入div中
+    function getTime() {
+        var date=new Date().toLocaleString();
+        var id1=document.getElementById("time");
+
+        var week = new Date().getDay();  
+        id1.innerHTML=date;
+        var tep = date;
+        tep += " 星期";
+        tep+=week;
+        id1.innerHTML=tep;
+    }
+  </script>
+
+<div id="top">
+  <div class="navTop" id="set1">轮播图</div>
+  <div class="navTop" id="set2">抽屉</div>
+  <div class="navTop" id="set3">图片切换</div>
+</div>
+<div class="nav">
+  <!-- 第一块轮播图 -->
+  <div class="slider">
+    <ul>
+      <li><a href="#"><img src="images/1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+    </ul>
+    <div class="arrow">
+      <span class="arrow-left">&lt;</span>
+      <span class="arrow-right">&gt;</span>
+    </div>
+  </div>
+  <!-- 第二块抽屉 -->
+  <div class="slider2">
+      <div class="sliderDiv">
+        <div id="slider2Div1">第一块内容</div>
+        <a href="#"><img id="aImage1" src="images/1.jpg" alt=""></a></div>
+      <div class="sliderDiv">
+        <div id="slider2Div2">第二块内容</div>
+        <a href="#"><img id="aImage2" src="images/2.jpg" alt=""></a></div>
+      <div class="sliderDiv">
+        <div id="slider2Div3">第三块内容</div>
+        <a href="#"><img id="aImage3" src="images/3.jpg" alt=""></a></div>
+      <div class="sliderDiv">
+        <div id="slider2Div4">第四块内容</div>
+        <a href="#"><img id="aImage4" src="images/4.jpg" alt=""></a></div>
+  </div>
+
+  <!-- 第三块图片切换 -->
+  <div class="slider3">
+    <ul class="ul3">
+      <li class="slide-item"><a href="#"><img src="images/1.jpg" alt=""></a></li>
+      <li class="slide-item"><a href="#"><img src="images/2.jpg" alt=""></a></li>
+      <li class="slide-item"><a href="#"><img src="images/3.jpg" alt=""></a></li>
+      <li class="slide-item"><a href="#"><img src="images/4.jpg" alt=""></a></li>
+    </ul>
+  </div>
+
+</div>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

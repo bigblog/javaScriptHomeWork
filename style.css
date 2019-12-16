@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#time{
+  margin: 100px 500px;
+  position: relative;
+}
+
+#top{
+  margin: 100px 200px;
+  position: relative;
+}
+
+.navTop{
+  width:150px;
+  height:40px;
+  float:left;
+  border:1px black solid;
+  position: relative;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  left:300px;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+}
+
+.nav{
+  height: 502px;
+  width: 600px;
+  margin: 10px 500px;
+  position: relative;
+  border:1px black solid;
+  top:40px;
+}
+
+.navTop:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.slider {
+  height: 400px;
+  width: 500px;
+  margin: 200px auto;
+  position: relative;
+  top:-200px;
+  left:40px;
+  float:left;
+}
+
+.slider li {
+  position: absolute;
+  display: none;
+}
+
+.slider li:first-child {
+  display: block;
+}
+
+.arrow {
+  display: none;
+}
+
+.slider:hover .arrow {
+  display: block;
+}
+
+.arrow-left,
+.arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 30px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.arrow-left{
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.arrow-right {
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.slider3{
+  height: 400px;
+  width: 700px;
+  display:none;
+  overflow: hidden;
+}
+
+.slide-item:nth-of-type(1) {
+    left: 0;
+}
+
+.slide-item:nth-of-type(2) {
+    left: 70px;
+}
+
+.slide-item:nth-of-type(3) {
+    left: 140px;
+}
+
+.slide-item:nth-of-type(4) {
+    left: 210px;
+}
+
+.ul3{
+  overflow: hidden;
+  height: 300px;
+  width: 600px;
+  position: absolute;
+}
+
+.ul3 li{
+  height: 300px;
+  width: 500px;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.6s linear;
+}
+
+.slider2{
+  height: 400px;
+  width: 700px;
+  display:none;
+  overflow: hidden;
+}
+
+.sliderDiv{
+  float:left;
+  position: relative;
+  top:20px;
+}
+
+.sliderDiv img{
+  display:none;
+  width:500px;
+  height:400px;
+}
+.sliderDiv a #aImage1{
+  display:inline;
+}
+
+.sliderDiv div{
+  float:left;
+  width: 20px;
+  height: 380px;
+  font-size: 20px;
+  line-height: 60px;
+}
+#slider2Div1{
+  background-color:blue;
+}
+#slider2Div2{
+  background-color:yellow;
+}
+#slider2Div3{
+  background-color:green;
+}
+#slider2Div4{
+  background-color:gray;
+}
